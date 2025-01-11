@@ -17,13 +17,21 @@ pip install fastapi psycopg2-binary uvicorn
 # Configure PostgreSQL:
 
 ** Create a database .
+
 ** Use the following table schema:
+
 CREATE TABLE posts (
+
     id SERIAL PRIMARY KEY,
+    
     title VARCHAR(255),
+    
     content TEXT,
+    
     published BOOLEAN DEFAULT TRUE,
+    
     created_at TIMESTAMP DEFAULT NOW()
+    
 );
 
 **Update database credentials in the code.
