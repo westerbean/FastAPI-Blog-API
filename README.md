@@ -34,10 +34,15 @@ uvicorn main:app --reload
 
 # API Endpoints
  GET /posts: Fetch all posts.
+ 
  POST /posts: Create a new post.
+ 
  GET /posts/{id}: Fetch a post by ID.
+ 
  GET /posts/latest: Fetch the most recently created post.
+ 
  PUT /posts/{id}: Update a post.
+ 
  DELETE /posts/{id}: Delete a post.
 
 # Notes
